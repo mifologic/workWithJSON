@@ -35,4 +35,5 @@ json_data = """[
 """
 
 for item in json.loads(json_data):
+    print("Is activity completed?")
     print(item['completed'])
