@@ -39,3 +39,6 @@ python file_name.py
 ls *.py|xargs -n 1 -P 4 python
 ```
 
+### Другие варианты запуска
+Также код можно открыть в удобной вам среде разработки, поддерживающей Python. 
+Для запуска может потребоваться виртуальное окружение. Подробнее о нём можно почитать [здесь](https://pavel-karateev.gitbook.io/intermediate-python/sredstva-razrabotki/virtual_environment). 
