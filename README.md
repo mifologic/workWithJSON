@@ -24,7 +24,7 @@ git clone https://github.com/mifologic/workWithJSON.git
 Файлы можно запустить из терминала. Для запуска папки json_from_request потребуется установить библиотеку requests. 
 Команда для установки:
 ````commandline
-python -m pip install requests
+python -m pip install requirements.txt
 ````
 **NB!** В некоторых операционных системах python может запускаться другой командой, например, python3. 
 

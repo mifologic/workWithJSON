@@ -7,187 +7,66 @@ import json
   (например, в json true/false пишутся с маленькой буквы, а в Python - с большой)
 """
 json_data = """[
-  {
-    "id": 1,
-    "title": "Activity 1",
-    "dueDate": "2024-01-09T19:03:43.1718735+00:00",
-    "completed": false
-  },
-  {
-    "id": 2,
-    "title": "Activity 2",
-    "dueDate": "2024-01-09T20:03:43.1718764+00:00",
-    "completed": true
-  },
-  {
-    "id": 3,
-    "title": "Activity 3",
-    "dueDate": "2024-01-09T21:03:43.1718768+00:00",
-    "completed": false
-  },
-  {
-    "id": 4,
-    "title": "Activity 4",
-    "dueDate": "2024-01-09T22:03:43.1718771+00:00",
-    "completed": true
-  },
-  {
-    "id": 5,
-    "title": "Activity 5",
-    "dueDate": "2024-01-09T23:03:43.1718774+00:00",
-    "completed": false
-  },
-  {
-    "id": 6,
-    "title": "Activity 6",
-    "dueDate": "2024-01-10T00:03:43.1718779+00:00",
-    "completed": true
-  },
-  {
-    "id": 7,
-    "title": "Activity 7",
-    "dueDate": "2024-01-10T01:03:43.1718782+00:00",
-    "completed": false
-  },
-  {
-    "id": 8,
-    "title": "Activity 8",
-    "dueDate": "2024-01-10T02:03:43.1718784+00:00",
-    "completed": true
-  },
-  {
-    "id": 9,
-    "title": "Activity 9",
-    "dueDate": "2024-01-10T03:03:43.1718787+00:00",
-    "completed": false
-  },
-  {
-    "id": 10,
-    "title": "Activity 10",
-    "dueDate": "2024-01-10T04:03:43.1718817+00:00",
-    "completed": true
-  },
-  {
-    "id": 11,
-    "title": "Activity 11",
-    "dueDate": "2024-01-10T05:03:43.1718821+00:00",
-    "completed": false
-  },
-  {
-    "id": 12,
-    "title": "Activity 12",
-    "dueDate": "2024-01-10T06:03:43.1718824+00:00",
-    "completed": true
-  },
-  {
-    "id": 13,
-    "title": "Activity 13",
-    "dueDate": "2024-01-10T07:03:43.1718827+00:00",
-    "completed": false
-  },
-  {
-    "id": 14,
-    "title": "Activity 14",
-    "dueDate": "2024-01-10T08:03:43.171883+00:00",
-    "completed": true
-  },
-  {
-    "id": 15,
-    "title": "Activity 15",
-    "dueDate": "2024-01-10T09:03:43.1718833+00:00",
-    "completed": false
-  },
-  {
-    "id": 16,
-    "title": "Activity 16",
-    "dueDate": "2024-01-10T10:03:43.1718837+00:00",
-    "completed": true
-  },
-  {
-    "id": 17,
-    "title": "Activity 17",
-    "dueDate": "2024-01-10T11:03:43.171884+00:00",
-    "completed": false
-  },
-  {
-    "id": 18,
-    "title": "Activity 18",
-    "dueDate": "2024-01-10T12:03:43.1718844+00:00",
-    "completed": true
-  },
-  {
-    "id": 19,
-    "title": "Activity 19",
-    "dueDate": "2024-01-10T13:03:43.1718848+00:00",
-    "completed": false
-  },
-  {
-    "id": 20,
-    "title": "Activity 20",
-    "dueDate": "2024-01-10T14:03:43.1718851+00:00",
-    "completed": true
-  },
-  {
-    "id": 21,
-    "title": "Activity 21",
-    "dueDate": "2024-01-10T15:03:43.1718854+00:00",
-    "completed": false
-  },
-  {
-    "id": 22,
-    "title": "Activity 22",
-    "dueDate": "2024-01-10T16:03:43.1718858+00:00",
-    "completed": true
-  },
-  {
-    "id": 23,
-    "title": "Activity 23",
-    "dueDate": "2024-01-10T17:03:43.1718861+00:00",
-    "completed": false
-  },
-  {
-    "id": 24,
-    "title": "Activity 24",
-    "dueDate": "2024-01-10T18:03:43.1718864+00:00",
-    "completed": true
-  },
-  {
-    "id": 25,
-    "title": "Activity 25",
-    "dueDate": "2024-01-10T19:03:43.1718867+00:00",
-    "completed": false
-  },
-  {
-    "id": 26,
-    "title": "Activity 26",
-    "dueDate": "2024-01-10T20:03:43.171887+00:00",
-    "completed": true
-  },
-  {
-    "id": 27,
-    "title": "Activity 27",
-    "dueDate": "2024-01-10T21:03:43.1718874+00:00",
-    "completed": false
-  },
-  {
-    "id": 28,
-    "title": "Activity 28",
-    "dueDate": "2024-01-10T22:03:43.1718877+00:00",
-    "completed": true
-  },
-  {
-    "id": 29,
-    "title": "Activity 29",
-    "dueDate": "2024-01-10T23:03:43.171888+00:00",
-    "completed": false
-  },
-  {
-    "id": 30,
-    "title": "Activity 30",
-    "dueDate": "2024-01-11T00:03:43.1718883+00:00",
-    "completed": true
-  }
-]
+   {
+        "id": 1,
+        "title": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+        "price": 109.95,
+        "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+        "category": "men's clothing",
+        "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+        "rating": {
+            "rate": 3.9,
+            "count": 120
+        }
+    },
+    {
+        "id": 2,
+        "title": "Mens Casual Premium Slim Fit T-Shirts ",
+        "price": 22.3,
+        "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+        "category": "men's clothing",
+        "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+        "rating": {
+            "rate": 4.1,
+            "count": 259
+        }
+    },
+    {
+        "id": 3,
+        "title": "Mens Cotton Jacket",
+        "price": 55.99,
+        "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+        "category": "men's clothing",
+        "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+        "rating": {
+            "rate": 4.7,
+            "count": 500
+        }
+    },
+    {
+        "id": 4,
+        "title": "Mens Casual Slim Fit",
+        "price": 15.99,
+        "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+        "category": "men's clothing",
+        "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+        "rating": {
+            "rate": 2.1,
+            "count": 430
+        }
+    },
+    {
+        "id": 5,
+        "title": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+        "price": 695,
+        "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
+        "category": "jewelery",
+        "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+        "rating": {
+            "rate": 4.6,
+            "count": 400
+        }
+    }
 """
 
 """
